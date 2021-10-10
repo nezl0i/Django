@@ -1,6 +1,4 @@
-{
-        "title": "GeekShop - Каталог",
-        "products": [
+ [
             {"name": "Худи черного цвета с монограммами adidas Originals",
              "image": "vendor/img/products/Adidas-hoodie.png",
              "price": 6090,
@@ -26,4 +24,3 @@
              "price": 2890,
              "text": "Легкая эластичная ткань сирсакер Фактурная ткань."}
         ]
-    }

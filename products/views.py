@@ -14,5 +14,9 @@ def index(request):
 
 def products(request):
     with open('products/fixtures/products.json') as file:
-        context = json.load(file)
+        json_product = json.load(file)
+    context = {
+        "title": "GeekShop - Каталог",
+        "products": json_product
+    }
     return render(request, 'products/products.html', context)
