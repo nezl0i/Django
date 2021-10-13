@@ -1,6 +1,5 @@
 import os
 from datetime import datetime
-
 from django.shortcuts import render
 from products.models import ProductCategory, Product
 
@@ -16,7 +15,7 @@ def index(request):
 
 
 def products(request):
-    file_path = os.path.join(MODULE_DIR, 'fixtures/products.json')
+    # file_path = os.path.join(MODULE_DIR, 'fixtures/products.json')
     context = {
         'title': 'GeekShop - Каталог',
         # 'products': json.load(open(file_path, encoding='utf-8'))
