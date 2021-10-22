@@ -1,3 +1,4 @@
+import basket as basket
 from django.shortcuts import render, HttpResponseRedirect
 from users.forms import UserLoginForm, UserRegistrationForm, UserProfileForm
 from django.urls import reverse
@@ -49,6 +50,7 @@ def profile(request):
             return HttpResponseRedirect(reverse('users:profile'))
     else:
         form = UserProfileForm(instance=user)
+
     context = {
         'title': 'GeekShop - Профиль',
         'form': form,
